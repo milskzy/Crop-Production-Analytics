@@ -27,16 +27,16 @@ India's crop production data was chosen as a proxy for Indonesia's context. Both
 
 Four models, each answering a different business question:
 
-**Clustering — K-Means**
+**Clustering (K-Means)**
 Which districts share similar farming profiles and fertilizer needs? 646 districts were grouped into 4 segments based on harvested area, yield efficiency, total production, and crop diversity.
 
-**Classification — Random Forest**
+**Classification (Random Forest)**
 Can fertilizer demand level (High / Medium / Low) be predicted for a given district and season? A Random Forest was trained inside a scikit-learn Pipeline to prevent data leakage, evaluated with 5-fold cross-validation.
 
-**Time Series — Prophet**
+**Time Series (Prophet)**
 How will rice fertilizer demand trend in coming years? Meta's Prophet was used to forecast demand based on 15 years of historical data, tested on 2013–2014.
 
-**Geospatial — Folium**
+**Geospatial (Folium)**
 Where are high-demand and low-yield districts located? 652 districts were geocoded via OpenStreetMap and plotted as an interactive heatmap showing fertilizer demand intensity across India.
 
 ---
